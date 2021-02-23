@@ -5,7 +5,7 @@ import Header from "../components/headerComponent";
 
 function WeaponPage() {
 	const paths = useLocation().pathname.split("/");
-	const [id_mast, id_cat, id_weap] = paths[2].split("_");
+	const [id_mast, id_cat, id_weap] = paths[3].split("_");
 
 	const db_main = useSelector((state) => state.mainDatabase);
 	const db_camos = useSelector((state) => (id_mast === "dm" ? state.dmDatabase : state.daDatabase));
