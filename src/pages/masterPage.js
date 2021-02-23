@@ -7,7 +7,7 @@ import Header from "../components/headerComponent";
 
 function MasterPage() {
 	const paths = useLocation().pathname.split("/");
-	const id_mast = paths[2];
+	const id_mast = paths[1];
 
 	const db_main = useSelector((state) => state.mainDatabase);
 	const sidebarState = useSelector((state) => state.sidebar);
@@ -24,6 +24,8 @@ function MasterPage() {
 	};
 
 	function MasterWeaponList({ items, index }) {
+		const [open, setOpen] = React.useState(false);
+
 		function calcProc(id_cat) {
 			let n = 0;
 			let length = 0;
@@ -58,7 +60,7 @@ function MasterPage() {
 					<div className="tracker_master_container_weaponlist">
 						{items.weapons.map((weapon) => (
 							<div className="tracker_master_container_weaponlist_weaponcontainer" key={weapon.id}>
-								<Link className="tracker_master_container_weaponlist_weaponcontainer_card" to={"/camo-tracker/weapon/" + id_mast + "_" + items.id + "_" + weapon.id} style={weapon.name.length > 10 ? { fontSize: 2 + "vh" } : {}}>
+								<Link className="tracker_master_container_weaponlist_weaponcontainer_card" to={"/weapon/" + id_mast + "_" + items.id + "_" + weapon.id} style={weapon.name.length > 10 ? { fontSize: 2 + "vh" } : {}}>
 									{weapon.name.toUpperCase()}
 								</Link>
 								<div className="tracker_master_container_weaponlist_weaponcontainer_yellowbar" style={{ width: calcProcWeap(items.id, weapon.id) }}></div>

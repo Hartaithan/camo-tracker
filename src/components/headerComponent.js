@@ -9,15 +9,14 @@ function Header() {
 
 	function findTitle() {
 		let title = "";
-		if (paths[1] === "camo-tracker") {
+		if (paths[1] === "") {
 			title = "MAIN";
-		}
-		if (paths[2] === "dm") {
+		} else if (paths[1] === "dm") {
 			title = "DM ULTRA";
-		} else if (paths[2] === "da") {
+		} else if (paths[1] === "da") {
 			title = "DARK AETHER";
-		} else if (paths[2] === "weapon") {
-			const [id_mast, id_cat, id_weap] = paths[3].split("_");
+		} else if (paths[1] === "weapon") {
+			const [id_mast, id_cat, id_weap] = paths[2].split("_");
 			title = id_mast.toUpperCase() + " | " + db_main[id_cat - 1].weapons[id_weap - 1].name.toUpperCase();
 		}
 		return title;
