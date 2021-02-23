@@ -1,0 +1,100 @@
+[
+	{
+		"categId": 1,
+		"categName": "Assault Rifle",
+		"categComplete": false,
+		"categWeapons": [
+			{ "weapId": 1, "weapName": "XM4", "weapComplete": false },
+			{ "weapId": 2, "weapName": "AK-47", "weapComplete": false },
+			{ "weapId": 3, "weapName": "Krig 6", "weapComplete": false },
+			{ "weapId": 4, "weapName": "QBZ-83", "weapComplete": false },
+			{ "weapId": 5, "weapName": "FFAR 1", "weapComplete": false },
+			{ "weapId": 6, "weapName": "Groza", "weapComplete": false }
+		]
+	},
+	{
+		"categId": 2,
+		"categName": "Submachine Guns",
+		"categComplete": false,
+		"categWeapons": [
+			{ "weapId": 1, "weapName": "MP5", "weapComplete": false },
+			{ "weapId": 2, "weapName": "Milano 821", "weapComplete": false },
+			{ "weapId": 3, "weapName": "AK-74u", "weapComplete": false },
+			{ "weapId": 4, "weapName": "KSP 45", "weapComplete": false },
+			{ "weapId": 5, "weapName": "Bullfrog", "weapComplete": false },
+			{ "weapId": 6, "weapName": "MAC-10", "weapComplete": false }
+		]
+	},
+	{
+		"categId": 3,
+		"categName": "Tactical Rifles",
+		"categComplete": false,
+		"categWeapons": [
+			{ "weapId": 1, "weapName": "Type 63", "weapComplete": false },
+			{ "weapId": 2, "weapName": "M16", "weapComplete": false },
+			{ "weapId": 3, "weapName": "AUG", "weapComplete": false },
+			{ "weapId": 4, "weapName": "DMR 14", "weapComplete": false }
+		]
+	},
+	{
+		"categId": 4,
+		"categName": "Light Machine Guns",
+		"categComplete": false,
+		"categWeapons": [
+			{ "weapId": 1, "weapName": "Stoner 63", "weapComplete": false },
+			{ "weapId": 2, "weapName": "RPD", "weapComplete": false },
+			{ "weapId": 3, "weapName": "M60", "weapComplete": false }
+		]
+	},
+	{
+		"categId": 5,
+		"categName": "Sniper Rifles",
+		"categComplete": false,
+		"categWeapons": [
+			{ "weapId": 1, "weapName": "Pellington 703", "weapComplete": false },
+			{ "weapId": 2, "weapName": "LW3 - Tundra", "weapComplete": false },
+			{ "weapId": 3, "weapName": "M82", "weapComplete": false }
+		]
+	},
+	{
+		"categId": 6,
+		"categName": "Pistols",
+		"categComplete": false,
+		"categWeapons": [
+			{ "weapId": 1, "weapName": "1911", "weapComplete": false },
+			{ "weapId": 2, "weapName": "Magnum", "weapComplete": false },
+			{ "weapId": 3, "weapName": "Diamatti", "weapComplete": false }
+		]
+	},
+	{
+		"categId": 7,
+		"categName": "Launchers",
+		"categComplete": false,
+		"categWeapons": [
+			{ "weapId": 1, "weapName": "RPG", "weapComplete": false },
+			{ "weapId": 2, "weapName": "Cigma 2", "weapComplete": false }
+		]
+	},
+	{
+		"categId": 8,
+		"categName": "Shotguns",
+		"categComplete": false,
+		"categWeapons": [
+			{ "weapId": 1, "weapName": "Hauer 77", "weapComplete": false },
+			{ "weapId": 2, "weapName": "Gallo SA12", "weapComplete": false },
+			{ "weapId": 3, "weapName": "Streetsweeper", "weapComplete": false }
+		]
+	},
+	{
+		"categId": 9,
+		"categName": "Melee",
+		"categComplete": false,
+		"categWeapons": [{ "weapId": 1, "weapName": "Knife", "weapComplete": false }]
+	},
+	{
+		"categId": 10,
+		"categName": "Special",
+		"categComplete": false,
+		"categWeapons": [{ "weapId": 1, "weapName": "M79", "weapComplete": false }]
+	}
+]

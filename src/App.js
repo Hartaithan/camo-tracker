@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import React from "react";
+import { Route } from "react-router-dom";
+
+// IMPORT PAGES
+import MainPage from "./pages/mainPage";
+import MasterPage from "./pages/masterPage";
+import WeaponPage from "./pages/weaponPage";
+
+// IMPORT COMPONENTS
+import Sidebar from "./components/sidebarComponent";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="tracker">
+			<Sidebar />
+			<Route exact path="/">
+				<MainPage />
+			</Route>
+			<Route path="/dm">
+				<MasterPage />
+			</Route>
+			<Route path="/da">
+				<MasterPage />
+			</Route>
+			<Route path="/weapon">
+				<WeaponPage />
+			</Route>
+		</div>
+	);
 }
 
 export default App;

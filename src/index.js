@@ -1,17 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import { createStore } from "redux";
+import combineReducer from "./reducers";
+import { Provider } from "react-redux";
+import { loadState, saveState } from "./localStorage";
+import { Context } from "./context";
+
+const persistedState = loadState();
+const store = createStore(combineReducer, persistedState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
+store.subscribe(() => {
+	saveState(store.getState());
+});
+
+function toggleSidebar(sidebar) {
+	console.log("index: " + sidebar)
+	if (sidebar === true) {
+		return "300px";
+	} else if (sidebar === false) {
+		return "0px";
+	}
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<Context.Provider value={{ toggleSidebar }}>
+		<Provider store={store}>
+			<BrowserRouter>
+				<React.StrictMode>
+					<App />
+				</React.StrictMode>
+			</BrowserRouter>
+		</Provider>
+	</Context.Provider>,
+	document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

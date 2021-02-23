@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+
+$color-bg: #121212;
+$color-text: #e4e4e4;
+$color-el: #1f1f1f;
+$color-header: #2b2b2b;
+$color-border: #3b3b3b;
+$color-completed: #ffc400;
+$color-noncompleted: #575757;
+$color-lock: rgba(58, 58, 58, 0.9);
+
+* {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+	color: $color-text;
+	-ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	background: $color-bg;
+}
+
+.tracker {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+	height: 100vh;
+	&_container {
+		margin-left: 300px;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+	&_header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
+		height: 50px;
+		&_menu {
+			height: 50px;
+			width: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			svg {
+				height: 40%;
+				width: 40%;
+				fill: $color-text;
+			}
+		}
+		&_title {
+			height: auto;
+			width: auto;
+		}
+		&_settings {
+			height: 50px;
+			width: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			svg {
+				height: 40%;
+				width: 40%;
+				fill: $color-text;
+			}
+		}
+	}
+	&_sidebar {
+		z-index: 99;
+		position: fixed;
+		left: 0px;
+		display: inline;
+		width: 300px;
+		background: $color-el;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+		&_header {
+			background: $color-header;
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: bold;
+			&_menu {
+				position: absolute;
+				left: 0;
+				height: 50px;
+				width: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				svg {
+					height: 40%;
+					width: 40%;
+					fill: $color-text;
+				}
+			}
+			&_link {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				a {
+					height: auto;
+					width: auto;
+				}
+			}
+		}
+		&_container {
+			box-sizing: border-box;
+			padding: 1.2vh;
+			height: calc(100% - 50px);
+			overflow: auto;
+			&_collapse {
+				padding: 0;
+				height: auto;
+			}
+		}
+	}
+	&_main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: calc(100% - 50px);
+	}
+	&_master {
+		display: flex;
+		flex-direction: column;
+		padding: 0 1.2vh;
+		box-sizing: border-box;
+		height: calc(100% - 50px);
+		&_container {
+			height: auto;
+			&_progress {
+				height: auto;
+				padding-top: 1.2vh;
+				&_text {
+					cursor: pointer;
+					height: auto;
+					display: flex;
+					justify-content: space-between;
+					&_name {
+						width: auto;
+					}
+					&_percentage {
+						width: auto;
+					}
+				}
+				&_bar {
+					margin-top: 0.5vh;
+					height: 5px;
+					background: $color-noncompleted;
+					border: 1px solid $color-border;
+					&_yellow {
+						background: $color-completed;
+						-webkit-transition: all 0.3s ease-out;
+						-moz-transition: all 0.3s ease-out;
+						-o-transition: all 0.3s ease-out;
+						transition: all 0.3s ease-out;
+					}
+				}
+			}
+			&_weaponlist {
+				display: flex;
+				flex-direction: row;
+				padding-top: 1vh;
+				&_weaponcontainer {
+					height: 100px;
+					width: 200px;
+					position: relative;
+					margin-right: 15px;
+					background: $color-el;
+					border: 1px solid $color-border;
+					&_card {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						font-weight: bold;
+						font-size: 3vh;
+						position: absolute;
+					}
+					&_yellowbar {
+						height: 4px;
+						width: 0%;
+						box-sizing: border-box;
+						background: $color-completed;
+						border-top: 1px solid $color-border;
+						position: absolute;
+						z-index: 89;
+						bottom: 0;
+						-webkit-transition: all 0.3s ease-out;
+						-moz-transition: all 0.3s ease-out;
+						-o-transition: all 0.3s ease-out;
+						transition: all 0.3s ease-out;
+					}
+					&_greybar {
+						height: 4px;
+						box-sizing: border-box;
+						background: $color-noncompleted;
+						border-top: 1px solid $color-border;
+						position: absolute;
+						bottom: 0;
+					}
+				}
+			}
+		}
+		&_container:last-child {
+			padding-bottom: 1.2vh;
+		}
+	}
+	&_weapon {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		height: calc(100% - 50px);
+		&_wrapper {
+			display: grid;
+			grid-template-columns: 50% 50%;
+			height: auto;
+			box-sizing: border-box;
+			&_container {
+				height: auto;
+				width: 550px;
+				margin: 1.5vh auto;
+				&_text {
+					height: auto;
+					display: flex;
+					justify-content: space-between;
+					&_name {
+						width: auto;
+					}
+					&_percentage {
+						width: auto;
+					}
+				}
+				&_bar {
+					margin-top: 0.5vh;
+					height: 7px;
+					background: $color-noncompleted;
+					border: 1px solid $color-border;
+					box-sizing: border-box;
+					&_yellow {
+						background: $color-completed;
+						width: 0%;
+						-webkit-transition: all 0.3s ease-out;
+						-moz-transition: all 0.3s ease-out;
+						-o-transition: all 0.3s ease-out;
+						transition: all 0.3s ease-out;
+					}
+				}
+				&_camocontainer {
+					margin-top: 1vh;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					height: auto;
+					&_camo {
+						position: relative;
+						height: 10.5vh;
+						width: 10.5vh;
+						background: $color-el;
+						border: 1px solid $color-border;
+						&_lock {
+							position: absolute;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							background: $color-lock;
+							-webkit-transition: all 0.3s ease-in-out;
+							-moz-transition: all 0.3s ease-in-out;
+							-o-transition: all 0.3s ease-in-out;
+							transition: all 0.3s ease-in-out;
+							svg {
+								height: 50%;
+								fill: black;
+								-webkit-transition: all 0.3s ease-in-out;
+								-moz-transition: all 0.3s ease-in-out;
+								-o-transition: all 0.3s ease-in-out;
+								transition: all 0.3s ease-in-out;
+							}
+							svg:hover {
+								fill: grey;
+							}
+						}
+					}
+					&_master {
+						pointer-events: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.Collapsible {
+	height: fit-content;
+	line-height: 2.5vh;
+	padding: none !important;
+	margin: none !important;
+}
+
+// MOBILE
+@media (max-width: 575.98px) {
+	.tracker {
+		&_container {
+			margin-left: 0px !important;
+			width: 100% !important;
+		}
+		&_main {
+			flex-direction: column;
+			width: 80vw;
+			margin: auto;
+			height: calc(100% - 50px);
+		}
+		&_master {
+			&_container {
+				&_weaponlist {
+					flex-direction: column;
+					&_weaponcontainer {
+						width: 100%;
+						height: 80px;
+						margin-bottom: 1vh;
+						&_card {
+							font-size: 4vh !important;
+						}
+					}
+				}
+			}
+		}
+		&_weapon {
+			justify-content: flex-start;
+			align-items: center;
+			&_wrapper {
+				grid-template-columns: 100%;
+				&_container {
+					width: 80vw;
+					&_camocontainer {
+						&_camo {
+							height: 6.5vh;
+							width: 6.5vh;
+						}
+					}
+				}
+				&_container:last-child {
+					margin-bottom: 5vh;
+				}
+			}
+		}
+	}
+}
+
+// TABLETS
+@media (min-width: 768px) and (max-width: 1199.98px) {
+	* {
+		font-size: 1.5vh;
+	}
+	.chart-label {
+		font-size: 0.2vh !important;
+	}
+	.chart-number {
+		font-size: 0.8vh !important;
+	}
+	.tracker {
+		&_container {
+			margin-left: 0px !important;
+			width: 100% !important;
+		}
+		&_master {
+			&_container {
+				&_weaponlist {
+					flex-direction: column;
+					&_weaponcontainer {
+						width: 100%;
+						height: 90px;
+						margin-bottom: 1vh;
+						&_card {
+							font-size: 3vh !important;
+						}
+					}
+				}
+			}
+		}
+		&_weapon {
+			justify-content: flex-start;
+			align-items: center;
+			&_wrapper {
+				grid-template-columns: 100%;
+				&_container {
+					width: 80vw;
+					&_camocontainer {
+						&_camo {
+							height: 10vh;
+							width: 10vh;
+						}
+					}
+				}
+				&_container:last-child {
+					margin-bottom: 5vh;
+				}
+			}
+		}
+	}
+}
+
+// NOTEBOOKS
+@media (min-width: 1200px) and (max-width: 1367px) {
+	.tracker {
+		&_weapon {
+			&_wrapper {
+				&_container {
+					height: auto;
+					width: 450px;
+					margin: 1.5vh auto;
+				}
+			}
+		}
+	}
+}
