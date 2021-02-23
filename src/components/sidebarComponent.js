@@ -17,7 +17,7 @@ function Sidebar() {
 					</svg>
 				</div>
 				<div className="tracker_sidebar_header_link">
-					<Link to="/camo-tracker/">CAMO TRACKER</Link>
+					<Link to="/">CAMO TRACKER</Link>
 				</div>
 			</div>
 			<div className="tracker_sidebar_container">
