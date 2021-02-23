@@ -16,7 +16,7 @@ store.subscribe(() => {
 
 ReactDOM.render(
 		<Provider store={store}>
-			<HashRouter basename={process.env.PUBLIC_URL}>
+			<HashRouter>
 				<React.StrictMode>
 					<App />
 				</React.StrictMode>
