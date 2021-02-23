@@ -27,7 +27,7 @@ function toggleSidebar(sidebar) {
 ReactDOM.render(
 	<Context.Provider value={{ toggleSidebar }}>
 		<Provider store={store}>
-			<BrowserRouter>
+			<BrowserRouter basename="/camo-tracker">
 				<React.StrictMode>
 					<App />
 				</React.StrictMode>
