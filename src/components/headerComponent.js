@@ -9,9 +9,6 @@ function Header() {
 
 	function findTitle() {
 		let title = "";
-		console.log("путь[1]: " + paths[1])
-		console.log("путь[2]: " + paths[2])
-		console.log("путь[3]: " + paths[3])
 		if (paths[1] === "camo-tracker") {
 			title = "MAIN";
 		}
@@ -23,7 +20,6 @@ function Header() {
 			const [id_mast, id_cat, id_weap] = paths[3].split("_");
 			title = id_mast.toUpperCase() + " | " + db_main[id_cat - 1].weapons[id_weap - 1].name.toUpperCase();
 		}
-		console.log("тайтл: " + title)
 		return title;
 	}
 
