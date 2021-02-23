@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/camo-tracker/static/css/main.5941fc8e.chunk.css",
-    "main.js": "/camo-tracker/static/js/main.17d2f544.chunk.js",
-    "main.js.map": "/camo-tracker/static/js/main.17d2f544.chunk.js.map",
+    "main.js": "/camo-tracker/static/js/main.d4fdfee0.chunk.js",
+    "main.js.map": "/camo-tracker/static/js/main.d4fdfee0.chunk.js.map",
     "runtime-main.js": "/camo-tracker/static/js/runtime-main.afabd107.js",
     "runtime-main.js.map": "/camo-tracker/static/js/runtime-main.afabd107.js.map",
     "static/js/2.3b8c1068.chunk.js": "/camo-tracker/static/js/2.3b8c1068.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.afabd107.js",
     "static/js/2.3b8c1068.chunk.js",
     "static/css/main.5941fc8e.chunk.css",
-    "static/js/main.17d2f544.chunk.js"
+    "static/js/main.d4fdfee0.chunk.js"
   ]
 }
