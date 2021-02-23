@@ -14,16 +14,16 @@ function App() {
 	return (
 		<div className="tracker">
 			<Sidebar />
-			<Route exact path="/">
+			<Route exact path={process.env.PUBLIC_URL + '/'}>
 				<MainPage />
 			</Route>
-			<Route path="/dm">
+			<Route path={process.env.PUBLIC_URL + '/dm'}>
 				<MasterPage />
 			</Route>
-			<Route path="/da">
+			<Route path={process.env.PUBLIC_URL + '/da'}>
 				<MasterPage />
 			</Route>
-			<Route path="/weapon">
+			<Route path={process.env.PUBLIC_URL + '/weapon'}>
 				<WeaponPage />
 			</Route>
 		</div>
