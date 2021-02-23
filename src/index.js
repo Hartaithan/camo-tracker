@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { createStore } from "redux";
 import combineReducer from "./reducers";
 import { Provider } from "react-redux";
@@ -16,11 +16,11 @@ store.subscribe(() => {
 
 ReactDOM.render(
 		<Provider store={store}>
-			<HashRouter basename="/camo-tracker">
+			<BrowserRouter basename="/camo-tracker">
 				<React.StrictMode>
 					<App />
 				</React.StrictMode>
-			</HashRouter>
+			</BrowserRouter>
 		</Provider>,
 	document.getElementById("root")
 );
