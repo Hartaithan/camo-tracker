@@ -10,9 +10,16 @@ function Sidebar() {
 
 	return (
 		<div className="tracker_sidebar" style={{ left: sidebarState.isOpen ? "0px" : "-300px" }}>
-			<Link className="tracker_sidebar_header" to="/">
-				CAMO TRACKER
-			</Link>
+			<div className="tracker_sidebar_header">
+				<div className="tracker_sidebar_header_menu" onClick={() => dispatch({ type: "TOGGLE_SIDEBAR" })}>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+					</svg>
+				</div>
+				<div className="tracker_sidebar_header_link">
+					<Link to="/camo-tracker/">CAMO TRACKER</Link>
+				</div>
+			</div>
 			<div className="tracker_sidebar_container">
 				<div className="tracker_sidebar_container_collapse">
 					<Collapsible handleTriggerClick={() => dispatch({ type: "TOGGLE_COLLAPSIBLE", mast: "dm", id: 0 })} open={sidebarState.collapsibleIsOpen.dm[0] ? true : false} trigger="▼ " triggerSibling={() => <Link to="/dm">DM ULTRA</Link>} transitionTime={100}>

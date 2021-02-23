@@ -16,7 +16,7 @@ store.subscribe(() => {
 
 ReactDOM.render(
 		<Provider store={store}>
-			<HashRouter basename="/camo-tracker">
+			<HashRouter basename={process.env.PUBLIC_URL}>
 				<React.StrictMode>
 					<App />
 				</React.StrictMode>
