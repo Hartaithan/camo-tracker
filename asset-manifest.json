@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/camo-tracker/static/css/main.f0fb4b9c.chunk.css",
-    "main.js": "/camo-tracker/static/js/main.441f64f3.chunk.js",
-    "main.js.map": "/camo-tracker/static/js/main.441f64f3.chunk.js.map",
+    "main.js": "/camo-tracker/static/js/main.ee9ca2ed.chunk.js",
+    "main.js.map": "/camo-tracker/static/js/main.ee9ca2ed.chunk.js.map",
     "runtime-main.js": "/camo-tracker/static/js/runtime-main.afabd107.js",
     "runtime-main.js.map": "/camo-tracker/static/js/runtime-main.afabd107.js.map",
-    "static/js/2.3b8c1068.chunk.js": "/camo-tracker/static/js/2.3b8c1068.chunk.js",
-    "static/js/2.3b8c1068.chunk.js.map": "/camo-tracker/static/js/2.3b8c1068.chunk.js.map",
+    "static/js/2.26b1bdd1.chunk.js": "/camo-tracker/static/js/2.26b1bdd1.chunk.js",
+    "static/js/2.26b1bdd1.chunk.js.map": "/camo-tracker/static/js/2.26b1bdd1.chunk.js.map",
     "index.html": "/camo-tracker/index.html",
     "static/css/main.f0fb4b9c.chunk.css.map": "/camo-tracker/static/css/main.f0fb4b9c.chunk.css.map",
-    "static/js/2.3b8c1068.chunk.js.LICENSE.txt": "/camo-tracker/static/js/2.3b8c1068.chunk.js.LICENSE.txt"
+    "static/js/2.26b1bdd1.chunk.js.LICENSE.txt": "/camo-tracker/static/js/2.26b1bdd1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.afabd107.js",
-    "static/js/2.3b8c1068.chunk.js",
+    "static/js/2.26b1bdd1.chunk.js",
     "static/css/main.f0fb4b9c.chunk.css",
-    "static/js/main.441f64f3.chunk.js"
+    "static/js/main.ee9ca2ed.chunk.js"
   ]
 }
