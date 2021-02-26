@@ -1,4 +1,4 @@
-import database from "../data/database.json";
+import database from "../data/db_main.json";
 
 const mainDatabase = (state = database, action) => {
 	let selectedArray = [];

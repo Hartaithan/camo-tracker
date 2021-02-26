@@ -4,7 +4,7 @@
 		"name": "Spray",
 		"completed": false,
 		"camos": [
-			{ "id": 1, "name": "Shards", "img": "img/dm/1_1.png", "completed": false },
+			{ "id": 1, "name": "Shards", "img": "../img/dm/1_1.png", "completed": false },
 			{ "id": 2, "name": "Ambush", "img": "../img/dm/1_2.png", "completed": false },
 			{ "id": 3, "name": "Frozen Lake", "img": "../img/dm/1_3.png", "completed": false },
 			{ "id": 4, "name": "Debris", "img": "../img/dm/1_4.png", "completed": false },
