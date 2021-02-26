@@ -24,8 +24,6 @@ function MasterPage() {
 	};
 
 	function MasterWeaponList({ items, index }) {
-		const [open, setOpen] = React.useState(false);
-
 		function calcProc(id_cat) {
 			let n = 0;
 			let length = 0;

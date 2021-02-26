@@ -14,16 +14,16 @@ function App() {
 	return (
 		<div className="tracker">
 			<Sidebar />
-			<Route exact path="/camo-tracker/">
+			<Route exact path="/">
 				<MainPage />
 			</Route>
-			<Route path="/camo-tracker/dm">
+			<Route path="/dm">
 				<MasterPage />
 			</Route>
-			<Route path="/camo-tracker/da">
+			<Route path="/da">
 				<MasterPage />
 			</Route>
-			<Route path="/camo-tracker/weapon">
+			<Route path="/weapon">
 				<WeaponPage />
 			</Route>
 		</div>
