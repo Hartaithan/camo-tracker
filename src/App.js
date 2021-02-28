@@ -9,11 +9,13 @@ import WeaponPage from "./pages/weaponPage";
 
 // IMPORT COMPONENTS
 import Sidebar from "./components/sidebarComponent";
+import SettingsComponent from "./components/settingsComponent";
 
 function App() {
 	return (
 		<div className="tracker">
 			<Sidebar />
+			<SettingsComponent />
 			<Route exact path="/">
 				<MainPage />
 			</Route>

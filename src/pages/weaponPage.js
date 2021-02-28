@@ -69,6 +69,8 @@ function WeaponPage() {
 		}
 	}
 
+	// .replace("../", "")
+
 	return (
 		<div className="tracker_container" style={sidebarState.isOpen ? style.isOpen : style.isClosed}>
 			<Header />

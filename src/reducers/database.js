@@ -54,6 +54,9 @@ const mainDatabase = (state = database, action) => {
 			return state.map((item) => {
 				return item;
 			});
+		case "RESET_ALL":
+			state = database;
+			return state;
 		default:
 			return state;
 	}

@@ -8,6 +8,7 @@ const sidebar = {
 		dm: [false, false, false, false, false, false, false, false, false, false],
 		da: [false, false, false, false, false, false, false, false, false, false],
 	},
+	settings: false,
 };
 
 const sidebarState = (state = sidebar, action) => {
@@ -39,7 +40,6 @@ const sidebarState = (state = sidebar, action) => {
 			}
 		case "TOGGLE_MASTER_COLLAPSIBLE":
 			if (action.mast === "dm") {
-                console.log("dm")
 				newArray = state.masterCollapsibleIsOpen.dm;
 				newArray[action.id] = !newArray[action.id];
 				return {
@@ -50,7 +50,6 @@ const sidebarState = (state = sidebar, action) => {
 					},
 				};
 			} else if (action.mast === "da") {
-                console.log("da")
 				newArray = state.masterCollapsibleIsOpen.da;
 				newArray[action.id] = !newArray[action.id];
 				return {
@@ -61,6 +60,8 @@ const sidebarState = (state = sidebar, action) => {
 					},
 				};
 			}
+		case "TOGGLE_SETTINGS":
+			return { ...state, settings: !state.settings };
 		default:
 			return state;
 	}
