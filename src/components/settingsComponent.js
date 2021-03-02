@@ -3,8 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 
 function SettingsComponent() {
-	// const paths = useLocation().pathname.split("/");
-	// const [id_mast, id_cat, id_weap] = paths[2].split("_");
+	const paths = useLocation().pathname.split("/");
+	const [id_mast, id_cat, id_weap] = paths[2].split("_");
 
 	const items = useSelector((state) => state.mainDatabase);
 	const sidebarState = useSelector((state) => state.sidebar);
@@ -21,6 +21,12 @@ function SettingsComponent() {
 				</div>
 			</div>
 			<div className="tracker_settings_container">
+				<div className="tracker_settings_container_completeweapon">
+					<div className="tracker_settings_container_resetweapon_title">COMPLETE WEAPON</div>
+					<div className="tracker_settings_container_resetweapon_button" onClick={() => dispatch({ type: "TOGGLE_WEAPON", id_cat: id_cat, id_weap: id_weap, id_mast: id_mast })}>
+						DO IT!
+					</div>
+				</div>
 				<div className="tracker_settings_container_resetweapon">
 					<div className="tracker_settings_container_resetweapon_title">RESET WEAPON</div>
 					<div className="tracker_settings_container_resetweapon_button">DO IT!</div>
