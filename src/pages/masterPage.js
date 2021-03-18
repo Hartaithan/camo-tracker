@@ -10,7 +10,7 @@ function MasterPage() {
 	const id_mast = paths[1];
 
 	const db_main = useSelector((state) => state.mainDatabase);
-	const sidebarState = useSelector((state) => state.sidebar);
+	const uiState = useSelector((state) => state.uiState);
 	const dispatch = useDispatch();
 
 	var style = {
@@ -54,7 +54,7 @@ function MasterPage() {
 					</div>
 				</div>
 
-				<Collapsible open={id_mast === "dm" ? sidebarState.masterCollapsibleIsOpen.dm[index] ? true : false : sidebarState.masterCollapsibleIsOpen.da[index] ? true : false} transitionTime={100}>
+				<Collapsible open={id_mast === "dm" ? uiState.masterCollapsibleIsOpen.dm[index] ? true : false : uiState.masterCollapsibleIsOpen.da[index] ? true : false} transitionTime={100}>
 					<div className="tracker_master_container_weaponlist">
 						{items.weapons.map((weapon) => (
 							<div className="tracker_master_container_weaponlist_weaponcontainer" key={weapon.id}>
@@ -72,7 +72,7 @@ function MasterPage() {
 	}
 
 	return (
-		<div className="tracker_container" style={sidebarState.isOpen ? style.isOpen : style.isClosed}>
+		<div className="tracker_container" style={uiState.isOpen ? style.isOpen : style.isClosed}>
 			<Header />
 			<div className="tracker_master">
 				{db_main.map((items, index) => (

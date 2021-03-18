@@ -9,7 +9,7 @@ function WeaponPage() {
 
 	const db_main = useSelector((state) => state.mainDatabase);
 	const db_camos = useSelector((state) => (id_mast === "dm" ? state.dmDatabase : state.daDatabase));
-	const sidebarState = useSelector((state) => state.sidebar);
+	const uiState = useSelector((state) => state.uiState);
 	const dispatch = useDispatch();
 
 	var style = {
@@ -72,7 +72,7 @@ function WeaponPage() {
 	// .replace("../", "")
 
 	return (
-		<div className="tracker_container" style={sidebarState.isOpen ? style.isOpen : style.isClosed}>
+		<div className="tracker_container" style={uiState.isOpen ? style.isOpen : style.isClosed}>
 			<Header />
 			<div className="tracker_weapon">
 				<div className="tracker_weapon_wrapper">

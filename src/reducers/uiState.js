@@ -1,8 +1,9 @@
-const sidebar = {
+const initialState = {
 	isOpen: true,
+	isActive: "dm",
 	collapsibleIsOpen: {
-		dm: [false, false, false, false, false, false, false, false, false, false, false],
-		da: [false, false, false, false, false, false, false, false, false, false, false],
+		dm: [false, false, false, false, false, false, false, false, false, false],
+		da: [false, false, false, false, false, false, false, false, false, false],
 	},
 	masterCollapsibleIsOpen: {
 		dm: [false, false, false, false, false, false, false, false, false, false],
@@ -11,9 +12,11 @@ const sidebar = {
 	settings: false,
 };
 
-const sidebarState = (state = sidebar, action) => {
+const uiState = (state = initialState, action) => {
 	let newArray = [];
 	switch (action.type) {
+		case "TOGGLE_TAB":
+			return { ...state, isActive: action.mast };
 		case "TOGGLE_SIDEBAR":
 			return { ...state, isOpen: !state.isOpen };
 		case "TOGGLE_COLLAPSIBLE":
@@ -67,4 +70,4 @@ const sidebarState = (state = sidebar, action) => {
 	}
 };
 
-export default sidebarState;
+export default uiState;

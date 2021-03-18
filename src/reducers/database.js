@@ -1,6 +1,8 @@
 import database from "../data/db_main.json";
 
-const mainDatabase = (state = database, action) => {
+const initialState = database;
+
+const mainDatabase = (state = initialState, action) => {
 	let selectedArray = [];
 	let n = 0;
 	switch (action.type) {
@@ -55,7 +57,8 @@ const mainDatabase = (state = database, action) => {
 				return item;
 			});
 		case "RESET_ALL":
-			return database;
+			state = initialState;
+			return state;
 		default:
 			return state;
 	}

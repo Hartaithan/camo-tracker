@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
 
 $color-bg: #121212;
 $color-text: #e4e4e4;
@@ -15,7 +15,8 @@ $color-lock: rgba(58, 58, 58, 0.9);
 	padding: 0;
 	height: 100%;
 	width: 100%;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Rubik", sans-serif;
+	font-weight: 400;
 	color: $color-text;
 	-ms-overflow-style: none;
 }
@@ -165,6 +166,42 @@ body {
 		-moz-transition: all 0.3s ease-out;
 		-o-transition: all 0.3s ease-out;
 		transition: all 0.3s ease-out;
+		&_tabview {
+			height: 50px;
+			display: flex;
+			flex-direction: row;
+			&_tab {
+				position: relative;
+				cursor: pointer;
+				&_line {
+					position: absolute;
+					height: 5px;
+					background: $color-noncompleted;
+					bottom: 0;
+					opacity: 0;
+				}
+				&_title {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 2vh;
+					a {
+						height: auto;
+						width: auto;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+				}
+			}
+			&_tab:hover {
+				background: $color-border;
+				-webkit-transition: all 0.3s ease-out;
+				-moz-transition: all 0.3s ease-out;
+				-o-transition: all 0.3s ease-out;
+				transition: all 0.3s ease-out;
+			}
+		}
 		&_header {
 			background: $color-header;
 			height: 50px;

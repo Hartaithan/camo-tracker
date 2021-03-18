@@ -1,17 +1,12 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useLocation } from "react-router-dom";
 
 function SettingsComponent() {
-	const paths = useLocation().pathname.split("/");
-	const [id_mast, id_cat, id_weap] = paths[2].split("_");
-
-	const items = useSelector((state) => state.mainDatabase);
-	const sidebarState = useSelector((state) => state.sidebar);
+	const uiState = useSelector((state) => state.uiState);
 	const dispatch = useDispatch();
 
 	return (
-		<div className="tracker_settings" style={{ right: sidebarState.settings ? "0px" : "-300px" }}>
+		<div className="tracker_settings" style={{ right: uiState.settings ? "0px" : "-300px" }}>
 			<div className="tracker_settings_header">
 				<div className="tracker_settings_header_title">SETTINGS</div>
 				<div className="tracker_settings_header_button" onClick={() => dispatch({ type: "TOGGLE_SETTINGS" })}>
@@ -21,16 +16,6 @@ function SettingsComponent() {
 				</div>
 			</div>
 			<div className="tracker_settings_container">
-				<div className="tracker_settings_container_completeweapon">
-					<div className="tracker_settings_container_resetweapon_title">COMPLETE WEAPON</div>
-					<div className="tracker_settings_container_resetweapon_button" onClick={() => dispatch({ type: "TOGGLE_WEAPON", id_cat: id_cat, id_weap: id_weap, id_mast: id_mast })}>
-						DO IT!
-					</div>
-				</div>
-				<div className="tracker_settings_container_resetweapon">
-					<div className="tracker_settings_container_resetweapon_title">RESET WEAPON</div>
-					<div className="tracker_settings_container_resetweapon_button">DO IT!</div>
-				</div>
 				<div className="tracker_settings_container_resetall">
 					<div className="tracker_settings_container_resetall_title">RESET ALL</div>
 					<div className="tracker_settings_container_resetall_button" onClick={() => dispatch({ type: "RESET_ALL" })}>

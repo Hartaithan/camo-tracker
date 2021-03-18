@@ -5,7 +5,7 @@ import Header from "../components/headerComponent";
 
 function MainPage() {
 	const db_main = useSelector((state) => state.mainDatabase);
-	const sidebarState = useSelector((state) => state.sidebar);
+	const uiState = useSelector((state) => state.uiState);
 
 	function calcProc(id_mast) {
 		let n = 0;
@@ -21,7 +21,7 @@ function MainPage() {
 	}
 
 	return (
-		<div className="tracker_container" style={{ marginLeft: sidebarState.isOpen ? "300px" : "0px" }}>
+		<div className="tracker_container" style={{ marginLeft: uiState.isOpen ? "300px" : "0px" }}>
 			<Header/>
 			<div className="tracker_main">
 				<CircleBar textColor="#e4e4e4" trailStrokeColor="#1f1f1f" strokeColor="#FFC400" percentage={calcProc("dm")} innerText="DM ULTRA" maxSize="60vh" speed="10" />
