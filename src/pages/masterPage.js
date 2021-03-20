@@ -42,11 +42,21 @@ function MasterPage() {
 			return Math.round(percentage) + "%";
 		}
 
+		function arrow(state) {
+			return (
+				<svg className="tracker_arrow" style={state ? { transform: "rotate(0deg)" } : { transform: "rotate(90deg)" }} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path d="M21 12l-18 12v-24z" />
+				</svg>
+			);
+		}
+
 		return (
 			<div className="tracker_master_container" key={items.id}>
 				<div className="tracker_master_container_progress">
 					<div className="tracker_master_container_progress_text" onClick={() => dispatch({ type: "TOGGLE_MASTER_COLLAPSIBLE", mast: id_mast, id: index })}>
-						<div className="tracker_master_container_progress_text_name">{"▼ " + items.name.toUpperCase()}</div>
+						<div className="tracker_master_container_progress_text_name">
+							{id_mast === "dm" ? (uiState.masterCollapsibleIsOpen.dm[index] ? arrow(true) : arrow(false)) : uiState.masterCollapsibleIsOpen.da[index] ? arrow(true) : arrow(false)} {items.name.toUpperCase()}
+						</div>
 						<div className="tracker_master_container_progress_text_percentage">{calcProc(items.id)}</div>
 					</div>
 					<div className="tracker_master_container_progress_bar">
@@ -54,7 +64,7 @@ function MasterPage() {
 					</div>
 				</div>
 
-				<Collapsible open={id_mast === "dm" ? uiState.masterCollapsibleIsOpen.dm[index] ? true : false : uiState.masterCollapsibleIsOpen.da[index] ? true : false} transitionTime={100}>
+				<Collapsible open={id_mast === "dm" ? (uiState.masterCollapsibleIsOpen.dm[index] ? true : false) : uiState.masterCollapsibleIsOpen.da[index] ? true : false} transitionTime={100}>
 					<div className="tracker_master_container_weaponlist">
 						{items.weapons.map((weapon) => (
 							<div className="tracker_master_container_weaponlist_weaponcontainer" key={weapon.id}>
