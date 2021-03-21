@@ -68,6 +68,11 @@ function MasterPage() {
 					<div className="tracker_master_container_weaponlist">
 						{items.weapons.map((weapon) => (
 							<div className="tracker_master_container_weaponlist_weaponcontainer" key={weapon.id}>
+								{weapon.dlc && (
+									<div className="tracker_master_container_weaponlist_weaponcontainer_dlc">
+										<div className="tracker_master_container_weaponlist_weaponcontainer_dlc_text">DLC</div>
+									</div>
+								)}
 								<Link className="tracker_master_container_weaponlist_weaponcontainer_card" to={"/weapon/" + id_mast + "_" + items.id + "_" + weapon.id} style={weapon.name.length > 10 ? { fontSize: 2 + "vh" } : {}}>
 									{weapon.name.toUpperCase()}
 								</Link>

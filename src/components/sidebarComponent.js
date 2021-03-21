@@ -17,7 +17,7 @@ function Sidebar() {
 
 	function arrow(state) {
 		return (
-			<svg className="tracker_arrow" style={state ? {transform: "rotate(0deg)"} : {transform: "rotate(90deg)"}} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			<svg className="tracker_arrow" style={state ? { transform: "rotate(0deg)" } : { transform: "rotate(90deg)" }} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 				<path d="M21 12l-18 12v-24z" />
 			</svg>
 		);
@@ -32,12 +32,13 @@ function Sidebar() {
 					<div key={props.mast + item.name}>
 						<Collapsible handleTriggerClick={() => dispatch({ type: "TOGGLE_COLLAPSIBLE", mast: props.mast, id: index + 1 })} open={collapsibleId[index + 1] ? true : false} trigger={collapsibleId[index + 1] ? arrow(true) : arrow(false)} triggerSibling={() => <span> {item.name.toUpperCase()}</span>} transitionTime={100}>
 							{item.weapons.map((weapon) => (
-								<div key={props.mast + weapon.name}>
-									<span>
+								<div className="tracker_sidebar_container_collapse_listitem" key={props.mast + weapon.name}>
+									<span key={props.mast + weapon.name}>
 										&emsp;&emsp;
 										<Link to={"/weapon/" + props.mast + "_" + item.id + "_" + weapon.id} onClick={closeSidebar}>
 											{weapon.name.toUpperCase()}
 										</Link>
+										{weapon.dlc && <sup className="tracker_sidebar_container_collapse_dlc"> DLC</sup>}
 									</span>
 								</div>
 							))}
