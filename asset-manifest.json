@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/camo-tracker/static/css/main.6d7d0544.chunk.css",
-    "main.js": "/camo-tracker/static/js/main.062dbacd.chunk.js",
-    "main.js.map": "/camo-tracker/static/js/main.062dbacd.chunk.js.map",
+    "main.css": "/camo-tracker/static/css/main.bb4664d1.chunk.css",
+    "main.js": "/camo-tracker/static/js/main.3012b517.chunk.js",
+    "main.js.map": "/camo-tracker/static/js/main.3012b517.chunk.js.map",
     "runtime-main.js": "/camo-tracker/static/js/runtime-main.afabd107.js",
     "runtime-main.js.map": "/camo-tracker/static/js/runtime-main.afabd107.js.map",
-    "static/js/2.753b29fa.chunk.js": "/camo-tracker/static/js/2.753b29fa.chunk.js",
-    "static/js/2.753b29fa.chunk.js.map": "/camo-tracker/static/js/2.753b29fa.chunk.js.map",
+    "static/js/2.a775d677.chunk.js": "/camo-tracker/static/js/2.a775d677.chunk.js",
+    "static/js/2.a775d677.chunk.js.map": "/camo-tracker/static/js/2.a775d677.chunk.js.map",
     "index.html": "/camo-tracker/index.html",
-    "static/css/main.6d7d0544.chunk.css.map": "/camo-tracker/static/css/main.6d7d0544.chunk.css.map",
-    "static/js/2.753b29fa.chunk.js.LICENSE.txt": "/camo-tracker/static/js/2.753b29fa.chunk.js.LICENSE.txt"
+    "static/css/main.bb4664d1.chunk.css.map": "/camo-tracker/static/css/main.bb4664d1.chunk.css.map",
+    "static/js/2.a775d677.chunk.js.LICENSE.txt": "/camo-tracker/static/js/2.a775d677.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.afabd107.js",
-    "static/js/2.753b29fa.chunk.js",
-    "static/css/main.6d7d0544.chunk.css",
-    "static/js/main.062dbacd.chunk.js"
+    "static/js/2.a775d677.chunk.js",
+    "static/css/main.bb4664d1.chunk.css",
+    "static/js/main.3012b517.chunk.js"
   ]
 }
