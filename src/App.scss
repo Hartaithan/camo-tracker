@@ -95,11 +95,9 @@ body {
 		}
 		&_container {
 			height: calc(100% - 20px);
-			padding: 0 15px;
+			padding: 10px 15px;
 			box-sizing: border-box;
-			&_resetweapon,
-			&_resetall,
-			&_completeweapon {
+			&_item {
 				height: 50px;
 				display: flex;
 				flex-direction: row;
@@ -107,7 +105,8 @@ body {
 				justify-content: space-between;
 				&_title {
 					height: auto;
-					width: auto;
+					width: calc(100% - 60px);
+					margin-right: 5px;
 				}
 				&_button {
 					cursor: pointer;
@@ -117,7 +116,7 @@ body {
 					background: $color-danger;
 					border-radius: 5px;
 					height: 50%;
-					width: 80px;
+					width: 60px;
 				}
 			}
 			hr {
@@ -147,8 +146,26 @@ body {
 			}
 		}
 		&_title {
+			display: flex;
+			flex-direction: row;
 			height: auto;
 			width: auto;
+			&_text {
+				white-space: nowrap;
+			}
+			&_check {
+				height: 19px;
+				-webkit-transition: all 0.3s ease-out;
+				-moz-transition: all 0.3s ease-out;
+				-o-transition: all 0.3s ease-out;
+				transition: all 0.3s ease-out;
+				svg {
+					cursor: pointer;
+					margin-left: 5px;
+					width: 19px;
+					fill: $color-text;
+				}
+			}
 		}
 		&_settings {
 			height: 50px;
@@ -401,6 +418,19 @@ body {
 					&_percentage {
 						width: auto;
 					}
+					&_check {
+						height: 19px;
+						-webkit-transition: all 0.3s ease-out;
+						-moz-transition: all 0.3s ease-out;
+						-o-transition: all 0.3s ease-out;
+						transition: all 0.3s ease-out;
+						svg {
+							cursor: pointer;
+							margin-left: 5px;
+							width: 19px;
+							fill: $color-text;
+						}
+					}
 				}
 				&_bar {
 					margin-top: 0.5vh;
@@ -446,9 +476,9 @@ body {
 								-moz-transition: all 0.3s ease-in-out;
 								-o-transition: all 0.3s ease-in-out;
 								transition: all 0.3s ease-in-out;
-							}
-							svg:hover {
-								fill: grey;
+								&:hover {
+									fill: grey;
+								}
 							}
 						}
 					}
@@ -474,6 +504,13 @@ body {
 		&_container {
 			margin-left: 0px !important;
 			width: 100% !important;
+		}
+		&_header {
+			&_title {
+				&_check {
+					opacity: 1 !important;
+				}
+			}
 		}
 		&_main {
 			flex-direction: column;
@@ -509,6 +546,11 @@ body {
 							width: 55px;
 						}
 					}
+					&_text {
+						&_check {
+							opacity: 1 !important;
+						}
+					}
 				}
 				&_container:last-child {
 					margin-bottom: 5vh;
@@ -534,6 +576,13 @@ body {
 			margin-left: 0px !important;
 			width: 100% !important;
 		}
+		&_header {
+			&_title {
+				&_check {
+					opacity: 1 !important;
+				}
+			}
+		}
 		&_master {
 			&_container {
 				&_weaponlist {
@@ -556,6 +605,11 @@ body {
 				grid-template-columns: 100%;
 				&_container {
 					width: 80vw;
+					&_text {
+						&_check {
+							opacity: 1 !important;
+						}
+					}
 				}
 				&_container:last-child {
 					margin-bottom: 5vh;

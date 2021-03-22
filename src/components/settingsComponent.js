@@ -1,9 +1,34 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { useLocation } from "react-router-dom";
 
 function SettingsComponent() {
+	const paths = useLocation().pathname.split("/");
+	const db_main = useSelector((state) => state.mainDatabase);
 	const uiState = useSelector((state) => state.uiState);
 	const dispatch = useDispatch();
+
+	function getName() {
+		let name = "";
+		if (paths[1] === "") {
+			name = "MAIN";
+		} else if (paths[1] === "dm") {
+			name = "DM ULTRA";
+		} else if (paths[1] === "da") {
+			name = "DARK AETHER";
+		} else if (paths[1] === "weapon") {
+			const [id_mast, id_cat, id_weap] = paths[2].split("_");
+			name = db_main[id_cat - 1].weapons[id_weap - 1].name.toUpperCase() + " " + "(" + id_mast.toUpperCase() + ")";
+		}
+		return name;
+	}
+
+	function dispatchWeapon() {
+		if (paths[1] === "weapon") {
+			const [id_mast, id_cat, id_weap] = paths[2].split("_");
+			dispatch({ type: "TOGGLE_WEAPON", id_cat: id_cat, id_weap: id_weap, id_mast: id_mast });
+		}
+	}
 
 	return (
 		<div className="tracker_settings" style={{ right: uiState.settings ? "0px" : "-300px" }}>
@@ -16,9 +41,19 @@ function SettingsComponent() {
 				</div>
 			</div>
 			<div className="tracker_settings_container">
-				<div className="tracker_settings_container_resetall">
-					<div className="tracker_settings_container_resetall_title">RESET ALL</div>
-					<div className="tracker_settings_container_resetall_button" onClick={() => dispatch({ type: "RESET_ALL" })}>
+				{paths[1] === "weapon" && (
+					<div className="tracker_settings_container_item">
+						<div className="tracker_settings_container_item_title" style={getName().length > 11 ? { fontSize: 1.6 + "vh" } : {}}>
+							COMPLETE {getName()}
+						</div>
+						<div className="tracker_settings_container_item_button" onClick={() => dispatchWeapon()}>
+							DO IT!
+						</div>
+					</div>
+				)}
+				<div className="tracker_settings_container_item">
+					<div className="tracker_settings_container_item_title">RESET ALL</div>
+					<div className="tracker_settings_container_item_button" onClick={() => dispatch({ type: "RESET_ALL" })}>
 						DO IT!
 					</div>
 				</div>

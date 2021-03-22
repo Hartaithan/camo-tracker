@@ -84,6 +84,19 @@
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
 				}
+			},
+			{
+				"id": 7,
+				"name": "FARA 83",
+				"completed": {
+					"dm": false,
+					"da": false
+				},
+				"dlc": true,
+				"camos": {
+					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+				}
 			}
 		]
 	},
@@ -163,6 +176,19 @@
 			{
 				"id": 6,
 				"name": "MAC-10",
+				"completed": {
+					"dm": false,
+					"da": false
+				},
+				"dlc": true,
+				"camos": {
+					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+				}
+			},
+			{
+				"id": 7,
+				"name": "LC10",
 				"completed": {
 					"dm": false,
 					"da": false
@@ -485,6 +511,58 @@
 					"da": false
 				},
 				"dlc": false,
+				"camos": {
+					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+				}
+			},
+			{
+				"id": 2,
+				"name": "Sledgehammer",
+				"completed": {
+					"dm": false,
+					"da": false
+				},
+				"dlc": true,
+				"camos": {
+					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+				}
+			},
+			{
+				"id": 3,
+				"name": "Wakizashi",
+				"completed": {
+					"dm": false,
+					"da": false
+				},
+				"dlc": true,
+				"camos": {
+					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+				}
+			},
+			{
+				"id": 4,
+				"name": "Machete",
+				"completed": {
+					"dm": false,
+					"da": false
+				},
+				"dlc": true,
+				"camos": {
+					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+				}
+			},
+			{
+				"id": 5,
+				"name": "E-Tool",
+				"completed": {
+					"dm": false,
+					"da": false
+				},
+				"dlc": true,
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
