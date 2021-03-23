@@ -338,6 +338,7 @@ body {
 					background: $color-el;
 					border: 1px solid $color-border;
 					&_card {
+						z-index: 5;
 						display: flex;
 						justify-content: center;
 						align-items: center;
@@ -383,6 +384,24 @@ body {
 							top: -22px;
 							right: -9px;
 							transform: rotate(45deg);
+						}
+					}
+					&_imgcontainer {
+						box-sizing: border-box;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						position: absolute;
+						img {
+							display: block;
+							max-width: 200px;
+							max-height: 100px;
+							width: auto;
+							height: auto;
+							padding: 10px;
+							box-sizing: border-box;
+							filter: invert(100%) opacity(70%);
+							-webkit-filter: invert(100%) opacity(70%);
 						}
 					}
 				}
@@ -529,6 +548,13 @@ body {
 						&_card {
 							font-size: 4vh !important;
 						}
+						&_imgcontainer {
+							img {
+								max-width: 100%;
+								max-height: 80px;
+								padding: 10px;
+							}
+						}
 					}
 				}
 			}
@@ -593,6 +619,13 @@ body {
 						margin-bottom: 1vh;
 						&_card {
 							font-size: 3vh !important;
+						}
+						&_imgcontainer {
+							img {
+								max-width: 100%;
+								max-height: 90px;
+								padding: 10px;
+							}
 						}
 					}
 				}

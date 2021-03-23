@@ -30,6 +30,13 @@ function SettingsComponent() {
 		}
 	}
 
+	function closeSidebar() {
+		const width = window.innerWidth;
+		if (width <= 768) {
+			dispatch({ type: "TOGGLE_SETTINGS" });
+		}
+	}
+
 	return (
 		<div className="tracker_settings" style={{ right: uiState.settings ? "0px" : "-300px" }}>
 			<div className="tracker_settings_header">
@@ -46,14 +53,26 @@ function SettingsComponent() {
 						<div className="tracker_settings_container_item_title" style={getName().length > 11 ? { fontSize: 1.6 + "vh" } : {}}>
 							COMPLETE {getName()}
 						</div>
-						<div className="tracker_settings_container_item_button" onClick={() => dispatchWeapon()}>
+						<div
+							className="tracker_settings_container_item_button"
+							onClick={() => {
+								dispatchWeapon();
+								closeSidebar();
+							}}
+						>
 							DO IT!
 						</div>
 					</div>
 				)}
 				<div className="tracker_settings_container_item">
 					<div className="tracker_settings_container_item_title">RESET ALL</div>
-					<div className="tracker_settings_container_item_button" onClick={() => dispatch({ type: "RESET_ALL" })}>
+					<div
+						className="tracker_settings_container_item_button"
+						onClick={() => {
+							dispatch({ type: "RESET_ALL" });
+							closeSidebar();
+						}}
+					>
 						DO IT!
 					</div>
 				</div>
