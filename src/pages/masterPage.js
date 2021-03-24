@@ -8,6 +8,7 @@ import Header from "../components/headerComponent";
 function MasterPage() {
 	const paths = useLocation().pathname.split("/");
 	const id_mast = paths[1];
+	const [counter, setCounter] = React.useState(2);
 
 	const db_main = useSelector((state) => state.mainDatabase);
 	const uiState = useSelector((state) => state.uiState);
@@ -65,7 +66,7 @@ function MasterPage() {
 				</div>
 
 				<Collapsible open={id_mast === "dm" ? (uiState.masterCollapsibleIsOpen.dm[index] ? true : false) : uiState.masterCollapsibleIsOpen.da[index] ? true : false} transitionTime={100}>
-					<div className="tracker_master_container_weaponlist">
+					<div className="tracker_master_container_weaponlist" style={{ gridTemplateColumns: "repeat(" + (uiState.isOpen ? Math.floor((window.innerWidth - 300) / 210) : Math.floor(window.innerWidth / 210)) + ", 200px)" }}>
 						{items.weapons.map((weapon) => (
 							<div className="tracker_master_container_weaponlist_weaponcontainer" key={weapon.id}>
 								{weapon.dlc && (
@@ -73,16 +74,12 @@ function MasterPage() {
 										<div className="tracker_master_container_weaponlist_weaponcontainer_dlc_text">DLC</div>
 									</div>
 								)}
-								<Link className="tracker_master_container_weaponlist_weaponcontainer_card" to={"/weapon/" + id_mast + "_" + items.id + "_" + weapon.id} style={weapon.name.length > 10 ? { fontSize: 2 + "vh" } : {}}>
+								<Link className="tracker_master_container_weaponlist_weaponcontainer_card" to={"/weapon/" + id_mast + "_" + items.id + "_" + weapon.id}>
 									{weapon.name.toUpperCase()}
 								</Link>
 								<div className="tracker_master_container_weaponlist_weaponcontainer_yellowbar" style={{ width: calcProcWeap(items.id, weapon.id) }}></div>
 								<div className="tracker_master_container_weaponlist_weaponcontainer_greybar"></div>
-								{weapon.img !== null && (
-									<div className="tracker_master_container_weaponlist_weaponcontainer_imgcontainer">
-										<img src={"camo-tracker/" + weapon.img} alt="weapon_img"></img>
-									</div>
-								)}
+								<div className="tracker_master_container_weaponlist_weaponcontainer_imgcontainer">{weapon.img !== null ? <img src={"camo-tracker/" + weapon.img} alt="weapon_img"></img> : "?"}</div>
 							</div>
 						))}
 					</div>

@@ -327,24 +327,46 @@ body {
 				}
 			}
 			&_weaponlist {
-				display: flex;
-				flex-direction: row;
+				display: grid;
+				width: 100%;
 				padding-top: 1vh;
+				justify-content: flex-start;
+				grid-gap: 1vh;
 				&_weaponcontainer {
 					height: 100px;
 					width: 200px;
 					position: relative;
-					margin-right: 15px;
 					background: $color-el;
 					border: 1px solid $color-border;
+					box-sizing: border-box;
 					&_card {
 						z-index: 5;
 						display: flex;
+						justify-content: flex-start;
+						align-items: flex-end;
+						left: 5px;
+						bottom: 5px;
+						font-size: 1.5vh;
+						position: absolute;
+					}
+					&_imgcontainer {
+						box-sizing: border-box;
+						display: flex;
 						justify-content: center;
 						align-items: center;
-						font-weight: 600;
-						font-size: 3vh;
 						position: absolute;
+						font-size: 6vh;
+						font-weight: 500;
+						img {
+							display: block;
+							max-width: 200px;
+							max-height: 100px;
+							width: auto;
+							height: auto;
+							padding: 20px;
+							opacity: 0.7;
+							box-sizing: border-box;
+						}
 					}
 					&_yellowbar {
 						height: 4px;
@@ -384,24 +406,6 @@ body {
 							top: -22px;
 							right: -9px;
 							transform: rotate(45deg);
-						}
-					}
-					&_imgcontainer {
-						box-sizing: border-box;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						position: absolute;
-						img {
-							display: block;
-							max-width: 200px;
-							max-height: 100px;
-							width: auto;
-							height: auto;
-							padding: 10px;
-							box-sizing: border-box;
-							filter: invert(100%) opacity(70%);
-							-webkit-filter: invert(100%) opacity(70%);
 						}
 					}
 				}
@@ -540,19 +544,23 @@ body {
 		&_master {
 			&_container {
 				&_weaponlist {
-					flex-direction: column;
+					display: grid;
+					grid-template-columns: 1fr !important;
+					width: 100%;
+					padding-top: 1vh;
+					justify-content: flex-start;
+					grid-gap: 1vh;
 					&_weaponcontainer {
 						width: 100%;
 						height: 80px;
-						margin-bottom: 1vh;
 						&_card {
-							font-size: 4vh !important;
+							font-size: 2vh !important;
 						}
 						&_imgcontainer {
 							img {
 								max-width: 100%;
 								max-height: 80px;
-								padding: 10px;
+								padding: 15px;
 							}
 						}
 					}
@@ -583,14 +591,20 @@ body {
 				}
 			}
 		}
+		&_sidebar {
+			&_tabview {
+				&_tab {
+					&_title {
+						font-size: 2.5vh;
+					}
+				}
+			}
+		}
 	}
 }
 
 // TABLETS
 @media (min-width: 768px) and (max-width: 1199.98px) {
-	* {
-		font-size: 1.5vh;
-	}
 	.chart-label {
 		font-size: 0.2vh !important;
 	}
@@ -612,19 +626,24 @@ body {
 		&_master {
 			&_container {
 				&_weaponlist {
-					flex-direction: column;
+					display: grid;
+					grid-template-columns: 1fr !important;
+					width: 100%;
+					padding-top: 1vh;
+					justify-content: flex-start;
+					grid-gap: 1vh;
 					&_weaponcontainer {
 						width: 100%;
-						height: 90px;
-						margin-bottom: 1vh;
+						height: 100px;
 						&_card {
-							font-size: 3vh !important;
+							font-size: 2vh !important;
+							bottom: 10px;
 						}
 						&_imgcontainer {
 							img {
 								max-width: 100%;
-								max-height: 90px;
-								padding: 10px;
+								max-height: 100px;
+								padding: 15px;
 							}
 						}
 					}

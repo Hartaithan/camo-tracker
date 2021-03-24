@@ -17,7 +17,7 @@ function Sidebar() {
 
 	function arrow(state) {
 		return (
-			<svg className="tracker_arrow" style={state ? { transform: "rotate(0deg)" } : { transform: "rotate(90deg)" }} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			<svg className="tracker_arrow" style={state ? { transform: "rotate(90deg)" } : { transform: "rotate(0deg)" }} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 				<path d="M21 12l-18 12v-24z" />
 			</svg>
 		);
