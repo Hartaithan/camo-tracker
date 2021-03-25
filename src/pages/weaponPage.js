@@ -69,14 +69,11 @@ function WeaponPage() {
 		}
 	}
 
-	// .replace("../", "")
-
 	const [show, setShow] = React.useState([false, false, false, false, false, false, false, false]);
 
 	function setShowCheck(index) {
 		if (index !== 7) {
-			const array = show;
-			array[index] = !array[index];
+			show[index] = !show[index];
 			setShow([...show, show]);
 		}
 	}
@@ -91,8 +88,8 @@ function WeaponPage() {
 							<div className="tracker_weapon_wrapper_container_text">
 								<div className="tracker_weapon_wrapper_container_text_name">{item.name.toUpperCase()}</div>
 								{index !== 7 && (
-									<div className="tracker_weapon_wrapper_container_text_check" style={{ opacity: show[index] ? "1" : "0" }} onClick={() => dispatch({ type: "TOGGLE_CAMO_CATEG", id_cat: id_cat, id_weap: id_weap, id_camo_cat: index + 1, id_mast: id_mast })}>
-										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 448 448">
+									<div className="tracker_weapon_wrapper_container_text_check" style={{ opacity: show[index] ? "1" : "0" }}>
+										<svg onClick={() => dispatch({ type: "TOGGLE_CAMO_CATEG", id_cat: id_cat, id_weap: id_weap, id_camo_cat: index + 1, id_mast: id_mast })} version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 448 448">
 											<polygon points="341.333,192.96 341.333,381.12 42.667,381.12 42.667,82.453 308.693,82.453 355.627,39.787 0,39.787 0,423.787 384,423.787 384,153.707" />
 											<polygon points="417.493,24.213 186.027,234.56 113.493,162.24 85.333,190.4 187.947,293.013 448,54.08" />
 										</svg>
@@ -113,7 +110,7 @@ function WeaponPage() {
 														<path d="m336 192h-16v-64c0-70.59375-57.40625-128-128-128s-128 57.40625-128 128v64h-16c-26.453125 0-48 21.523438-48 48v224c0 26.476562 21.546875 48 48 48h288c26.453125 0 48-21.523438 48-48v-224c0-26.476562-21.546875-48-48-48zm-229.332031-64c0-47.0625 38.269531-85.332031 85.332031-85.332031s85.332031 38.269531 85.332031 85.332031v64h-170.664062zm0 0" />
 													</svg>
 												</div>
-												<img className="tracker_weapon_wrapper_container_camocontainer_camo_img" src={"camo-tracker/" + camo.img} alt="camo_img" />
+												<img className="tracker_weapon_wrapper_container_camocontainer_camo_img" src={"camo-tracker/" + camo.img.replace("../", "")} alt="camo_img" />
 											</div>
 										);
 									} else {
@@ -124,7 +121,7 @@ function WeaponPage() {
 														<path d="m336 192h-16v-64c0-70.59375-57.40625-128-128-128s-128 57.40625-128 128v64h-16c-26.453125 0-48 21.523438-48 48v224c0 26.476562 21.546875 48 48 48h288c26.453125 0 48-21.523438 48-48v-224c0-26.476562-21.546875-48-48-48zm-229.332031-64c0-47.0625 38.269531-85.332031 85.332031-85.332031s85.332031 38.269531 85.332031 85.332031v64h-170.664062zm0 0" />
 													</svg>
 												</div>
-												<img className="tracker_weapon_wrapper_container_camocontainer_camo_img" src={"camo-tracker/" + camo.img} alt="camo_img" />
+												<img className="tracker_weapon_wrapper_container_camocontainer_camo_img" src={"camo-tracker/" + camo.img.replace("../", "")} alt="camo_img" />
 											</div>
 										);
 									}
@@ -137,5 +134,7 @@ function WeaponPage() {
 		</div>
 	);
 }
+
+// .replace("../", "")
 
 export default WeaponPage;
