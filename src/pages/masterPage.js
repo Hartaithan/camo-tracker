@@ -101,7 +101,7 @@ function MasterPage() {
 								</Link>
 								<div className="tracker_master_container_weaponlist_weaponcontainer_yellowbar" style={{ width: calcProcWeap(items.id, weapon.id) }}></div>
 								<div className="tracker_master_container_weaponlist_weaponcontainer_greybar"></div>
-								<div className="tracker_master_container_weaponlist_weaponcontainer_imgcontainer">{weapon.img !== null ? <img src={"camo-tracker/" + weapon.img.replace("../", "")} alt="weapon_img"></img> : "?"}</div>
+								<div className="tracker_master_container_weaponlist_weaponcontainer_imgcontainer">{weapon.img !== null ? <img src={"camo-tracker/" + weapon.img} alt="weapon_img"></img> : "?"}</div>
 							</div>
 						))}
 					</div>
