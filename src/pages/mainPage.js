@@ -76,6 +76,21 @@ function MainPage() {
 		}
 	}
 
+	function calcTotal() {
+		let numOfCamos = 0;
+		let lengthOfCamos = 0;
+		db_main.map((categ) => {
+			categ.weapons.map((weapon) => {
+				numOfCamos = numOfCamos + weapon.camos["dm"].filter(Boolean).length;
+				lengthOfCamos = lengthOfCamos + weapon.camos["dm"].length;
+				numOfCamos = numOfCamos + weapon.camos["da"].filter(Boolean).length;
+				lengthOfCamos = lengthOfCamos + weapon.camos["da"].length;
+			});
+		});
+		const percentage = (numOfCamos / lengthOfCamos) * 100;
+		return parseFloat(percentage.toFixed(2));
+	}
+
 	function SmallProgressComponent(props) {
 		return (
 			<div className="tracker_main_right_circlecontainer">
@@ -126,7 +141,7 @@ function MainPage() {
 						<LargeProgressComponent color="#00BBF9" id={3} value={calcBase("da")} width={3.5} />
 						<LargeProgressComponent color="#FFC400" id={4} value={calcBaseDlc("da")} width={4.5} />
 						<div className="tracker_main_left_circle_textcontainer">
-							<div className="tracker_main_left_circle_textcontainer_perc">100%</div>
+							<div className="tracker_main_left_circle_textcontainer_perc">{calcTotal() + "%"}</div>
 							<div className="tracker_main_left_circle_textcontainer_text">TOTAL</div>
 						</div>
 					</div>
