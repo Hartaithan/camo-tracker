@@ -391,7 +391,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": null,
+				"img": "../img/w/5_4.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]

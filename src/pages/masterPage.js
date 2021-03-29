@@ -47,7 +47,7 @@ function MasterPage() {
 	};
 
 	function MasterWeaponList({ items, index }) {
-		function calcProc(id_cat) {
+		function calcPerc(id_cat) {
 			let n = 0;
 			let length = 0;
 			db_main[id_cat - 1].weapons.map((weapon) => {
@@ -59,7 +59,7 @@ function MasterPage() {
 			return Math.round(percentage) + "%";
 		}
 
-		function calcProcWeap(id_cat, id_weap) {
+		function calcPercWeap(id_cat, id_weap) {
 			const array = db_main[id_cat - 1].weapons[id_weap - 1].camos[id_mast];
 			const percentage = (array.filter(Boolean).length / array.length) * 100;
 			return Math.round(percentage) + "%";
@@ -80,10 +80,10 @@ function MasterPage() {
 						<div className="tracker_master_container_progress_text_name">
 							{id_mast === "dm" ? (uiState.masterCollapsibleIsOpen.dm[index] ? arrow(true) : arrow(false)) : uiState.masterCollapsibleIsOpen.da[index] ? arrow(true) : arrow(false)} {items.name.toUpperCase()}
 						</div>
-						<div className="tracker_master_container_progress_text_percentage">{calcProc(items.id)}</div>
+						<div className="tracker_master_container_progress_text_percentage">{calcPerc(items.id)}</div>
 					</div>
 					<div className="tracker_master_container_progress_bar">
-						<div className="tracker_master_container_progress_bar_yellow" style={{ width: calcProc(items.id) }} />
+						<div className="tracker_master_container_progress_bar_yellow" style={{ width: calcPerc(items.id) }} />
 					</div>
 				</div>
 
@@ -99,9 +99,9 @@ function MasterPage() {
 								<Link className="tracker_master_container_weaponlist_weaponcontainer_card" to={"/weapon/" + id_mast + "_" + items.id + "_" + weapon.id}>
 									{weapon.name.toUpperCase()}
 								</Link>
-								<div className="tracker_master_container_weaponlist_weaponcontainer_yellowbar" style={{ width: calcProcWeap(items.id, weapon.id) }}></div>
+								<div className="tracker_master_container_weaponlist_weaponcontainer_yellowbar" style={{ width: calcPercWeap(items.id, weapon.id) }}></div>
 								<div className="tracker_master_container_weaponlist_weaponcontainer_greybar"></div>
-								<div className="tracker_master_container_weaponlist_weaponcontainer_imgcontainer">{weapon.img !== null ? <img src={"camo-tracker/" + weapon.img} alt="weapon_img"></img> : "?"}</div>
+								<div className="tracker_master_container_weaponlist_weaponcontainer_imgcontainer">{weapon.img !== null ? <img src={"camo-tracker/" + weapon.img.replace("../", "")} alt="weapon_img"></img> : "?"}</div>
 							</div>
 						))}
 					</div>

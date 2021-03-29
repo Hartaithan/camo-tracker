@@ -22,7 +22,7 @@ function WeaponPage() {
 		},
 	};
 
-	function calcProc(id_camocat) {
+	function calcPerc(id_camocat) {
 		let array = [];
 		if (id_camocat === 1) {
 			array = db_main[id_cat - 1].weapons[id_weap - 1].camos[id_mast].slice(0, 5);
@@ -46,17 +46,19 @@ function WeaponPage() {
 	}
 
 	function checkMastery(id_camo) {
+		// CHECK GOLD
 		if (id_camo === 36) {
 			return db_main[id_cat - 1].weapons[id_weap - 1].completed[id_mast] ? 0 : 1;
+			// CHECK DIAMOND
 		} else if (id_camo === 37) {
-			let n = 0;
-			db_main[id_cat - 1].weapons.map((weapon) => {
-				if (weapon.completed[id_mast] === true) {
-					n++;
+			if (db_main[id_cat - 1].weapons[id_weap - 1].dlc) {
+				if (db_main[id_cat - 1].weapons[id_weap - 1].completed[id_mast]) {
+					return db_main[id_cat - 1].completed[id_mast] ? 0 : 1;
 				}
-				return n;
-			});
-			return n === db_main[id_cat - 1].weapons.length ? 0 : 1;
+			} else {
+				return db_main[id_cat - 1].completed[id_mast] ? 0 : 1;
+			}
+			// CHECK MASTERY
 		} else if (id_camo === 38) {
 			let n = 0;
 			db_main.map((weapon) => {
@@ -65,7 +67,13 @@ function WeaponPage() {
 				}
 				return n;
 			});
-			return n === db_main.length ? 0 : 1;
+			if (db_main[id_cat - 1].weapons[id_weap - 1].dlc) {
+				if (db_main[id_cat - 1].weapons[id_weap - 1].completed[id_mast]) {
+					return n === db_main.length ? 0 : 1;
+				}
+			} else {
+				return n === db_main.length ? 0 : 1;
+			}
 		}
 	}
 
@@ -95,10 +103,10 @@ function WeaponPage() {
 										</svg>
 									</div>
 								)}
-								<div className="tracker_weapon_wrapper_container_text_percentage">{calcProc(item.id)}</div>
+								<div className="tracker_weapon_wrapper_container_text_percentage">{calcPerc(item.id)}</div>
 							</div>
 							<div className="tracker_weapon_wrapper_container_bar">
-								<div className="tracker_weapon_wrapper_container_bar_yellow" style={{ width: calcProc(item.id) }}></div>
+								<div className="tracker_weapon_wrapper_container_bar_yellow" style={{ width: calcPerc(item.id) }}></div>
 							</div>
 							<div className="tracker_weapon_wrapper_container_camocontainer">
 								{item.camos.map((camo) => {
@@ -110,7 +118,7 @@ function WeaponPage() {
 														<path d="m336 192h-16v-64c0-70.59375-57.40625-128-128-128s-128 57.40625-128 128v64h-16c-26.453125 0-48 21.523438-48 48v224c0 26.476562 21.546875 48 48 48h288c26.453125 0 48-21.523438 48-48v-224c0-26.476562-21.546875-48-48-48zm-229.332031-64c0-47.0625 38.269531-85.332031 85.332031-85.332031s85.332031 38.269531 85.332031 85.332031v64h-170.664062zm0 0" />
 													</svg>
 												</div>
-												<img className="tracker_weapon_wrapper_container_camocontainer_camo_img" src={"camo-tracker/" + camo.img} alt="camo_img" />
+												<img className="tracker_weapon_wrapper_container_camocontainer_camo_img" src={"camo-tracker/" + camo.img.replace("../", "")} alt="camo_img" />
 											</div>
 										);
 									} else {
@@ -121,7 +129,7 @@ function WeaponPage() {
 														<path d="m336 192h-16v-64c0-70.59375-57.40625-128-128-128s-128 57.40625-128 128v64h-16c-26.453125 0-48 21.523438-48 48v224c0 26.476562 21.546875 48 48 48h288c26.453125 0 48-21.523438 48-48v-224c0-26.476562-21.546875-48-48-48zm-229.332031-64c0-47.0625 38.269531-85.332031 85.332031-85.332031s85.332031 38.269531 85.332031 85.332031v64h-170.664062zm0 0" />
 													</svg>
 												</div>
-												<img className="tracker_weapon_wrapper_container_camocontainer_camo_img" src={"camo-tracker/" + camo.img} alt="camo_img" />
+												<img className="tracker_weapon_wrapper_container_camocontainer_camo_img" src={"camo-tracker/" + camo.img.replace("../", "")} alt="camo_img" />
 											</div>
 										);
 									}

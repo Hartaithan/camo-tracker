@@ -3,6 +3,7 @@ import database from "../data/db_main.json";
 const initialState = database;
 
 const mainDatabase = (state = initialState, action) => {
+	const baseNumWeapon = [5, 5, 4, 3, 3, 3, 2, 2, 1, 1];
 	let selectedArray = [];
 	let n = 0;
 	switch (action.type) {
@@ -18,12 +19,15 @@ const mainDatabase = (state = initialState, action) => {
 			}
 			// CHANGING CATEGORY ON COMPLETE IF ALL WEAPONS TRUE
 			state[action.id_cat - 1].weapons.map((weapon) => {
-				if (weapon.completed[action.id_mast] === true) {
-					n++;
+				if (weapon.dlc === false) {
+					if (weapon.completed[action.id_mast] === true) {
+						n++;
+						console.log("TOGGLE_CAMO: " + n);
+					}
 				}
 				return n;
 			});
-			if (n === state[action.id_cat - 1].weapons.length) {
+			if (n === baseNumWeapon[action.id_cat - 1]) {
 				state[action.id_cat - 1].completed[action.id_mast] = true;
 			} else {
 				state[action.id_cat - 1].completed[action.id_mast] = false;
@@ -42,12 +46,14 @@ const mainDatabase = (state = initialState, action) => {
 			}
 			// CHANGING CATEGORY ON COMPLETE IF ALL WEAPONS TRUE
 			state[action.id_cat - 1].weapons.map((weapon) => {
-				if (weapon.completed[action.id_mast] === true) {
-					n++;
+				if (weapon.dlc === false) {
+					if (weapon.completed[action.id_mast] === true) {
+						n++;
+					}
 				}
 				return n;
 			});
-			if (n === state[action.id_cat - 1].weapons.length) {
+			if (n === baseNumWeapon[action.id_cat - 1]) {
 				state[action.id_cat - 1].completed[action.id_mast] = true;
 			} else {
 				state[action.id_cat - 1].completed[action.id_mast] = false;
@@ -106,12 +112,15 @@ const mainDatabase = (state = initialState, action) => {
 			}
 			// CHANGING CATEGORY ON COMPLETE IF ALL WEAPONS TRUE
 			state[action.id_cat - 1].weapons.map((weapon) => {
-				if (weapon.completed[action.id_mast] === true) {
-					n++;
+				if (weapon.dlc === false) {
+					if (weapon.completed[action.id_mast] === true) {
+						n++;
+						console.log("TOGGLE_CAMO_CATEG: " + n);
+					}
 				}
 				return n;
 			});
-			if (n === state[action.id_cat - 1].weapons.length) {
+			if (n === baseNumWeapon[action.id_cat - 1]) {
 				state[action.id_cat - 1].completed[action.id_mast] = true;
 			} else {
 				state[action.id_cat - 1].completed[action.id_mast] = false;
@@ -121,6 +130,7 @@ const mainDatabase = (state = initialState, action) => {
 			});
 		case "RESET_ALL":
 			state = initialState;
+			console.log("RESET_ALL");
 			return state;
 		default:
 			return state;
