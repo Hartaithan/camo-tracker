@@ -9,7 +9,7 @@
 		"@testing-library/user-event": "^12.6.0",
 		"firebase": "^8.3.2",
 		"immutability-helper": "^3.1.1",
-		"node-sass": "^4.14.1",
+		"node-sass": "^5.0.0",
 		"react": "^17.0.1",
 		"react-circular-progressbar": "^2.0.4",
 		"react-collapsible": "^2.8.1",
