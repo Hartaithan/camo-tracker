@@ -212,6 +212,20 @@
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
 				}
+			},
+			{
+				"id": 8,
+				"name": "PPSH-41",
+				"completed": {
+					"dm": false,
+					"da": false
+				},
+				"dlc": true,
+				"img": "../img/w/2_8.png",
+				"camos": {
+					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+				}
 			}
 		]
 	},
@@ -274,6 +288,20 @@
 				},
 				"dlc": false,
 				"img": "../img/w/3_4.png",
+				"camos": {
+					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+				}
+			},
+			{
+				"id": 5,
+				"name": "CARV.2",
+				"completed": {
+					"dm": false,
+					"da": false
+				},
+				"dlc": true,
+				"img": "../img/w/3_5.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -392,6 +420,20 @@
 				},
 				"dlc": true,
 				"img": "../img/w/5_4.png",
+				"camos": {
+					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+				}
+			},
+			{
+				"id": 5,
+				"name": "Swiss K31",
+				"completed": {
+					"dm": false,
+					"da": false
+				},
+				"dlc": true,
+				"img": "../img/w/5_5.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -593,7 +635,7 @@
 			},
 			{
 				"id": 4,
-				"name": "Machete",
+				"name": "E-Tool",
 				"completed": {
 					"dm": false,
 					"da": false
@@ -607,7 +649,7 @@
 			},
 			{
 				"id": 5,
-				"name": "E-Tool",
+				"name": "Machete",
 				"completed": {
 					"dm": false,
 					"da": false
@@ -652,6 +694,20 @@
 				},
 				"dlc": true,
 				"img": "../img/w/10_2.png",
+				"camos": {
+					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+				}
+			},
+			{
+				"id": 3,
+				"name": "Ballistic Knife",
+				"completed": {
+					"dm": false,
+					"da": false
+				},
+				"dlc": true,
+				"img": "../img/w/10_3.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]

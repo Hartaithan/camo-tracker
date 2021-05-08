@@ -22,7 +22,6 @@ const mainDatabase = (state = initialState, action) => {
 				if (weapon.dlc === false) {
 					if (weapon.completed[action.id_mast] === true) {
 						n++;
-						console.log("TOGGLE_CAMO: " + n);
 					}
 				}
 				return n;
@@ -63,43 +62,28 @@ const mainDatabase = (state = initialState, action) => {
 			});
 		case "TOGGLE_CAMO_CATEG":
 			const currentArray = state[action.id_cat - 1].weapons[action.id_weap - 1].camos[action.id_mast];
-			console.log("current array" + [currentArray]);
 			const completed = [true, true, true, true, true];
 			switch (action.id_camo_cat) {
 				case 1:
-					console.log("id_camo_cat: " + action.id_camo_cat + " case: 1");
 					Array.prototype.splice.apply(currentArray, [0, 5].concat(completed));
-					console.log(currentArray.length + " array after case: " + currentArray);
 					break;
 				case 2:
-					console.log("id_camo_cat: " + action.id_camo_cat + " case: 2");
 					Array.prototype.splice.apply(currentArray, [5, 5].concat(completed));
-					console.log(currentArray.length + " array after case: " + currentArray);
 					break;
 				case 3:
-					console.log("id_camo_cat: " + action.id_camo_cat + " case: 3");
 					Array.prototype.splice.apply(currentArray, [10, 5].concat(completed));
-					console.log(currentArray.length + " array after case: " + currentArray);
 					break;
 				case 4:
-					console.log("id_camo_cat: " + action.id_camo_cat + " case: 4");
 					Array.prototype.splice.apply(currentArray, [15, 5].concat(completed));
-					console.log(currentArray.length + " array after case: " + currentArray);
 					break;
 				case 5:
-					console.log("id_camo_cat: " + action.id_camo_cat + " case: 5");
 					Array.prototype.splice.apply(currentArray, [20, 5].concat(completed));
-					console.log(currentArray.length + " array after case: " + currentArray);
 					break;
 				case 6:
-					console.log("id_camo_cat: " + action.id_camo_cat + " case: 6");
 					Array.prototype.splice.apply(currentArray, [25, 5].concat(completed));
-					console.log(currentArray.length + " array after case: " + currentArray);
 					break;
 				case 7:
-					console.log("id_camo_cat: " + action.id_camo_cat + " case: 7");
 					Array.prototype.splice.apply(currentArray, [30, 5].concat(completed));
-					console.log(currentArray.length + " array after case: " + currentArray);
 					break;
 				default:
 					console.log("default");
@@ -115,7 +99,6 @@ const mainDatabase = (state = initialState, action) => {
 				if (weapon.dlc === false) {
 					if (weapon.completed[action.id_mast] === true) {
 						n++;
-						console.log("TOGGLE_CAMO_CATEG: " + n);
 					}
 				}
 				return n;
