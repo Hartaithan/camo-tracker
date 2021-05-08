@@ -1,10 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import CircleBar from "../components/circleBar";
 import Header from "../components/headerComponent";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import uiState from "./../reducers/uiState";
 
 function MainPage() {
 	const db_main = useSelector((state) => state.mainDatabase);

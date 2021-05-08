@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { createStore } from "redux";
 import combineReducer from "./reducers";
 import { Provider } from "react-redux";
@@ -15,12 +15,12 @@ store.subscribe(() => {
 });
 
 ReactDOM.render(
+	<React.StrictMode>
 		<Provider store={store}>
-			<HashRouter>
-				<React.StrictMode>
-					<App />
-				</React.StrictMode>
-			</HashRouter>
-		</Provider>,
+			<Router basename={process.env.PUBLIC_URL}>
+				<App />
+			</Router>
+		</Provider>
+	</React.StrictMode>,
 	document.getElementById("root")
 );
