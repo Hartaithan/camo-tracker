@@ -15,7 +15,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/1_1.png",
+				"img": "/img/w/1_1.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -29,7 +29,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/1_2.png",
+				"img": "/img/w/1_2.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -43,7 +43,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/1_3.png",
+				"img": "/img/w/1_3.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -57,7 +57,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/1_4.png",
+				"img": "/img/w/1_4.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -71,7 +71,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/1_5.png",
+				"img": "/img/w/1_5.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -85,7 +85,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/1_6.png",
+				"img": "/img/w/1_6.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -99,7 +99,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/1_7.png",
+				"img": "/img/w/1_7.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -123,7 +123,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/2_1.png",
+				"img": "/img/w/2_1.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -137,7 +137,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/2_2.png",
+				"img": "/img/w/2_2.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -151,7 +151,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/2_3.png",
+				"img": "/img/w/2_3.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -165,7 +165,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/2_4.png",
+				"img": "/img/w/2_4.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -179,7 +179,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/2_5.png",
+				"img": "/img/w/2_5.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -193,7 +193,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/2_6.png",
+				"img": "/img/w/2_6.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -207,7 +207,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/2_7.png",
+				"img": "/img/w/2_7.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -221,7 +221,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/2_8.png",
+				"img": "/img/w/2_8.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -245,7 +245,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/3_1.png",
+				"img": "/img/w/3_1.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -259,7 +259,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/3_2.png",
+				"img": "/img/w/3_2.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -273,7 +273,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/3_3.png",
+				"img": "/img/w/3_3.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -287,7 +287,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/3_4.png",
+				"img": "/img/w/3_4.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -301,7 +301,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/3_5.png",
+				"img": "/img/w/3_5.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -325,7 +325,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/4_1.png",
+				"img": "/img/w/4_1.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -339,7 +339,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/4_2.png",
+				"img": "/img/w/4_2.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -353,7 +353,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/4_3.png",
+				"img": "/img/w/4_3.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -377,7 +377,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/5_1.png",
+				"img": "/img/w/5_1.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -391,7 +391,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/5_2.png",
+				"img": "/img/w/5_2.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -405,7 +405,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/5_3.png",
+				"img": "/img/w/5_3.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -419,7 +419,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/5_4.png",
+				"img": "/img/w/5_4.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -433,7 +433,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/5_5.png",
+				"img": "/img/w/5_5.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -457,7 +457,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/6_1.png",
+				"img": "/img/w/6_1.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -471,7 +471,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/6_2.png",
+				"img": "/img/w/6_2.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -485,7 +485,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/6_3.png",
+				"img": "/img/w/6_3.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -509,7 +509,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/7_1.png",
+				"img": "/img/w/7_1.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -523,7 +523,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/7_2.png",
+				"img": "/img/w/7_2.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -547,7 +547,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/8_1.png",
+				"img": "/img/w/8_1.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -561,7 +561,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/8_2.png",
+				"img": "/img/w/8_2.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -575,7 +575,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/8_3.png",
+				"img": "/img/w/8_3.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -599,7 +599,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/9_1.png",
+				"img": "/img/w/9_1.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -613,7 +613,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/9_2.png",
+				"img": "/img/w/9_2.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -627,7 +627,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/9_3.png",
+				"img": "/img/w/9_3.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -641,7 +641,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/9_4.png",
+				"img": "/img/w/9_4.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -655,7 +655,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/9_5.png",
+				"img": "/img/w/9_5.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -679,7 +679,7 @@
 					"da": false
 				},
 				"dlc": false,
-				"img": "../img/w/10_1.png",
+				"img": "/img/w/10_1.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -693,7 +693,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/10_2.png",
+				"img": "/img/w/10_2.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -707,7 +707,7 @@
 					"da": false
 				},
 				"dlc": true,
-				"img": "../img/w/10_3.png",
+				"img": "/img/w/10_3.png",
 				"camos": {
 					"dm": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 					"da": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
